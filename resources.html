@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="新竹升國中考古題練習、升學考科與官方下載連結">
+<title>升學與題庫｜新竹升學練習室</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./resources-data.js"></script>
+<script defer src="./resources.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="topbar"><div class="shell top-inner">
+  <a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">∑</span><span>新竹升學練習室</span></a>
+  <nav aria-label="主選單">
+    <a href="./index.html">線上練習</a>
+    <a href="./resources.html" aria-current="page">升學與題庫</a>
+  </nav>
+</div></header>
+<main id="main" class="shell">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">新竹市 <span></span> 新竹縣</p>
+      <h1>升學與考古題</h1>
+      <p>查考科、找簡章，下載 113–115 學年度考古題。</p>
+    </div>
+    <div class="hero-links">
+      <a class="button" href="#admissions">查看升學考科 ↓</a>
+      <a class="button" href="#papers">前往考古題 ↓</a>
+    </div>
+  </section>
+  <noscript><p class="panel">請啟用 JavaScript 以顯示升學資料和考古題連結。</p></noscript>
+  <section class="resource-section" id="admissions">
+    <h2>新竹升學考科</h2>
+    <p class="muted">私中國中部招生與公立國中資優鑑定是兩種管道。考科以 115 學年度為參考，116 學年度報名請查各校或主管機關公告。</p>
+    <div id="school-list"></div>
+  </section>
+  <section class="resource-section" id="papers">
+    <div class="section-heading">
+      <div><h2>考古題下載</h2><p class="muted">題庫收錄外縣市學校原卷，適合跨校練習。</p></div>
+      <div class="segmented" role="group" aria-label="題庫分類">
+        <button id="priority" type="button" aria-pressed="true">優先題庫</button>
+        <button id="reserve" type="button" aria-pressed="false">補充題庫</button>
+      </div>
+    </div>
+    <div id="papers-list" class="panel papers-list"></div>
+  </section>
+</main>
+<footer class="site-footer shell"><span>新竹升學練習室</span><span>113–115 學年度考古題</span></footer>
+</body>
+</html>

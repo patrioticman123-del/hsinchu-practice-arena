@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="新竹升國中線上考古題、錯題重練與升學資訊">
+<title>新竹升學練習室</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./arena.css">
+<script defer src="./questions.js"></script>
+<script defer src="./catalog.js"></script>
+<script defer src="./notes.js"></script>
+<script defer src="./arena.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="topbar"><div class="shell top-inner">
+  <a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">ϟ</span>新竹升學練習室</a>
+  <nav aria-label="主選單"><a href="./index.html" aria-current="page">線上練習</a><a href="./resources.html">升學與題庫</a></nav>
+  <div class="font-control" role="group" aria-label="字體大小">
+    <button id="font-minus" type="button" aria-label="縮小字體">A−</button>
+    <button id="font-plus" type="button" aria-label="放大字體">A＋</button>
+  </div>
+</div></header>
+<main id="main" class="shell arena-main">
+<noscript><p>請啟用 JavaScript 使用線上練習。</p></noscript>
+<section id="library">
+  <div class="arena-hero">
+    <div class="arena-intro"><h1>考古題挑戰場</h1><p>選一科開練，交卷後再挑戰錯過的題目。</p><div class="arena-stats" id="stats"></div></div>
+    <img src="./figures/arena.webp" width="900" height="600" alt="原創電光龍與對戰陀螺">
+  </div>
+  <div class="library-head"><h2>依科目選卷</h2><div class="filters" id="filters" role="group" aria-label="依科目篩選"></div></div>
+  <div id="wrong-tools" class="wrong-tools"></div>
+  <div class="paper-grid" id="paper-grid"></div>
+</section>
+<section id="practice" hidden></section>
+<section id="report" hidden></section>
+</main>
+<dialog id="action-dialog" aria-labelledby="dialog-title">
+  <form id="action-form">
+    <h2 id="dialog-title"></h2><p id="dialog-detail"></p>
+    <div id="pin-field" hidden><label for="pin">家長密碼</label><input id="pin" type="password" inputmode="numeric" maxlength="4" autocomplete="off"><p class="error" id="pin-error" aria-live="polite"></p></div>
+    <div class="dialog-actions"><button class="button" id="cancel-action" type="button">取消</button><button class="button primary" id="confirm-action"></button></div>
+  </form>
+</dialog>
+<footer class="site-footer shell"><span>新竹升學練習室</span><span>113–115 學年度考古題</span></footer>
+</body>
+</html>
+
